@@ -21,9 +21,9 @@
 
 | Package | Description | Direct Download |
 | :--- | :--- | :--- |
-| **🚀 NexPad Windows Installer** | **Recommended.** 1-Click setup with ViGEmBus drivers, server, APK & uninstaller embedded. | [**Download `NexPad_Setup.exe`**](https://github.com/REPLACE_WITH_YOUR_USERNAME/NexPad/releases/latest/download/NexPad_Setup.exe) *(17.3 MB)* |
-| **📱 NexPad Android App** | Dedicated Android APK with 100 Hz UDP, customizable layouts & 6 dynamic themes. | [**Download `NexPad.apk`**](https://github.com/REPLACE_WITH_YOUR_USERNAME/NexPad/releases/latest/download/NexPad.apk) *(7.19 MB)* |
-| **📦 NexPad Portable** | Standalone zip containing Windows server and Android APK without installer. | [**Download `NexPad_Portable.zip`**](https://github.com/REPLACE_WITH_YOUR_USERNAME/NexPad/releases/latest/download/NexPad_Portable.zip) *(17.3 MB)* |
+| **🚀 NexPad Windows Installer** | **Recommended.** 1-Click setup with ViGEmBus drivers, server, APK & uninstaller embedded. | [**Download `NexPad_Setup.exe`**](https://github.com/SushantSaks/NexPad/releases/latest/download/NexPad_Setup.exe) *(17.3 MB)* |
+| **📱 NexPad Android App** | Dedicated Android APK with 100 Hz UDP, customizable layouts & 6 dynamic themes. | [**Download `NexPad.apk`**](https://github.com/SushantSaks/NexPad/releases/latest/download/NexPad.apk) *(7.19 MB)* |
+| **📦 NexPad Portable** | Standalone zip containing Windows server and Android APK without installer. | [**Download `NexPad_Portable.zip`**](https://github.com/SushantSaks/NexPad/releases/latest/download/NexPad_Portable.zip) *(17.3 MB)* |
 
 ---
 
@@ -66,13 +66,13 @@
 ## 🚀 Quick Start Guide
 
 ### Step 1: Install on PC
-1. Download and run [**`NexPad_Setup.exe`**](https://github.com/REPLACE_WITH_YOUR_USERNAME/NexPad/releases/latest/download/NexPad_Setup.exe).
+1. Download and run [**`NexPad_Setup.exe`**](https://github.com/SushantSaks/NexPad/releases/latest/download/NexPad_Setup.exe).
 2. The installer will automatically install the ViGEmBus controller driver (if missing) and create desktop shortcuts.
 3. Launch **NexPad** from your Desktop.
 
 ### Step 2: Install on Android Phone
 1. Connect your phone to the same Wi-Fi network or your PC's Mobile Hotspot.
-2. Install [**`NexPad.apk`**](https://github.com/REPLACE_WITH_YOUR_USERNAME/NexPad/releases/latest/download/NexPad.apk) on your phone.
+2. Install [**`NexPad.apk`**](https://github.com/SushantSaks/NexPad/releases/latest/download/NexPad.apk) on your phone.
    *(You can also download it directly by opening your phone's browser and visiting `http://<your-pc-ip>:42426/NexPad.apk`)*.
 3. Open **NexPad** on your phone and tap **"Connect"**.
 
