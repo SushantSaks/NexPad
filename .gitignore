@@ -1,0 +1,5 @@
+# Ignore compiled binaries from git history (they are attached to GitHub Releases)
+dist/
+*.exe
+*.apk
+*.zip
