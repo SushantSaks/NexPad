@@ -71,7 +71,7 @@
 3. Launch **NexPad** from your Desktop.
 
 ### Step 2: Install on Android Phone
-1. Connect your phone to the same Wi-Fi network or your PC's Mobile Hotspot.
+1. Connect your phone to your PC's Mobile Hotspot.
 2. Install [**`NexPad.apk`**](https://github.com/SushantSaks/NexPad/releases/latest/download/NexPad.apk) on your phone.
    *(You can also download it directly by opening your phone's browser and visiting `http://<your-pc-ip>:42426/NexPad.apk`)*.
 3. Open **NexPad** on your phone and tap **"Connect"**.
