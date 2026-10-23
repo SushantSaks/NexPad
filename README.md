@@ -9,10 +9,10 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-v1.2.2-00E5FF?style=for-the-badge" alt="Version" />
+  <img src="https://img.shields.io/badge/Version-v1.2.3-00E5FF?style=for-the-badge" alt="Version" />
   <img src="https://img.shields.io/badge/Platform-Windows%2010%2F11%20%7C%20Android-7C4DFF?style=for-the-badge" alt="Platform" />
   <img src="https://img.shields.io/badge/Emulation-ViGEmBus%20XInput-00E676?style=for-the-badge" alt="XInput" />
-  <img src="https://img.shields.io/badge/Motion-Zero--Drift%20Gyro-00E5FF?style=for-the-badge" alt="Gyro" />
+  <img src="https://img.shields.io/badge/Motion-Independent%20X%2FY%20Gyro-00E5FF?style=for-the-badge" alt="Gyro" />
   <img src="https://img.shields.io/badge/Updates-Direct%20GitHub-FF0055?style=for-the-badge" alt="Updates" />
   <img src="https://img.shields.io/badge/Latency-%3C1ms%20Wired%20USB-FFD600?style=for-the-badge" alt="Latency" />
   <img src="https://img.shields.io/badge/Multiplayer-Up%20to%204%20Players-FF9100?style=for-the-badge" alt="Multiplayer" />
@@ -21,18 +21,21 @@
 
 ---
 
-## 📥 Downloads (Latest Release v1.2.2)
+## 📥 Downloads (Latest Release v1.2.3)
 
 | Package | Description | Direct Download |
 | :--- | :--- | :--- |
 | **🚀 NexPad Windows Installer** | **Recommended.** 1-Click setup with ViGEmBus drivers, server, APK & uninstaller embedded. | [**Download `NexPad_Setup.exe`**](https://github.com/SushantSaks/NexPad/releases/latest/download/NexPad_Setup.exe) *(16.8 MB)* |
-| **📱 NexPad Android App** | Dedicated Android APK with Tilt-to-Move deflection aiming, GitHub updates & haptic rumble. | [**Download `NexPad.apk`**](https://github.com/SushantSaks/NexPad/releases/latest/download/NexPad.apk) *(7.04 MB)* |
+| **📱 NexPad Android App** | Dedicated Android APK with independent X/Y gyro controls, Tilt-to-Move aiming & updates. | [**Download `NexPad.apk`**](https://github.com/SushantSaks/NexPad/releases/latest/download/NexPad.apk) *(7.05 MB)* |
 | **📦 NexPad Portable** | Standalone zip containing Windows server and Android APK without installer. | [**Download `NexPad_Portable.zip`**](https://github.com/SushantSaks/NexPad/releases/latest/download/NexPad_Portable.zip) *(14.0 MB)* |
 
 ---
 
-## ✨ What's New in v1.2.2
+## ✨ What's New in v1.2.3
 
+* 🎛️ **Independent X & Y Gyro Axis Controls**:
+  * **Separate Sensitivity**: Adjust Horizontal (X — Yaw/Roll) and Vertical (Y — Pitch) sensitivity independently from **0.2x to 3.0x** with real-time value readouts.
+  * **Separate Deadzones**: Configure separate angular deadzones for X and Y from **0.5° to 6.0°**, allowing you to set tighter horizontal tracking for aiming while avoiding accidental vertical recoil/pitch drift.
 * 🎮 **Tilt-to-Move Deflection Aiming (Tilt = Move, Normal = Stop)**:
   * **Slight Tilt = Slow Tracking**: Tilting the phone slightly past the neutral deadzone pushes the virtual right stick gently past in-game deadzones, smoothly moving the camera slowly in that direction.
   * **Return to Normal = Stay in Place**: Returning the phone back to your normal resting position immediately centers the stick to `(0, 0)`, stopping the camera dead in its tracks right where it reached.
@@ -40,9 +43,6 @@
   * **Selectable Aiming Style**: Switch seamlessly between **Tilt-to-Move (Joystick Deflection)** and **Motion Velocity (Raw Gyro Sweeping)** in Settings.
   * **1-Tap Normal Calibration**: Tap *"Calibrate Normal Position"* to lock in whatever angle you're holding your phone comfortably as the exact (0, 0) baseline.
   * **Auto-Neutral on Aim Down Sights (ADS)**: Pressing LT or touching the Right Stick automatically snapshots your current grip as neutral.
-* 🎯 **Fixed Gyro Aiming & Motion Steering (Zero Lingering Spin)**:
-  * Rebuilt the gyro input pipeline so rotational velocity is calculated as instantaneous offsets rather than persistent stick accumulation.
-  * **Continuous Auto-Drift Nulling**: Stillness zeroing automatically adapts to hardware MEMS bias, eliminating creeping rotation.
 * 🚀 **In-App Direct GitHub Update System**:
   * The Android app automatically checks GitHub Releases on startup in the background.
   * Adds an update notification badge (`✨ vX.X.X`) to the top HUD capsule and a **"Check for Updates"** button in Settings.
