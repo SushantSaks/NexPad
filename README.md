@@ -9,11 +9,11 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-v1.2.0-00E5FF?style=for-the-badge" alt="Version" />
+  <img src="https://img.shields.io/badge/Version-v1.2.1-00E5FF?style=for-the-badge" alt="Version" />
   <img src="https://img.shields.io/badge/Platform-Windows%2010%2F11%20%7C%20Android-7C4DFF?style=for-the-badge" alt="Platform" />
   <img src="https://img.shields.io/badge/Emulation-ViGEmBus%20XInput-00E676?style=for-the-badge" alt="XInput" />
-  <img src="https://img.shields.io/badge/Motion-Gyro%20Aiming-00E5FF?style=for-the-badge" alt="Gyro" />
-  <img src="https://img.shields.io/badge/Haptics-Force%20Feedback-FF0055?style=for-the-badge" alt="Haptics" />
+  <img src="https://img.shields.io/badge/Motion-Zero--Drift%20Gyro-00E5FF?style=for-the-badge" alt="Gyro" />
+  <img src="https://img.shields.io/badge/Updates-Direct%20GitHub-FF0055?style=for-the-badge" alt="Updates" />
   <img src="https://img.shields.io/badge/Latency-%3C1ms%20Wired%20USB-FFD600?style=for-the-badge" alt="Latency" />
   <img src="https://img.shields.io/badge/Multiplayer-Up%20to%204%20Players-FF9100?style=for-the-badge" alt="Multiplayer" />
   <img src="https://img.shields.io/badge/Publisher-Sushant-FF007F?style=for-the-badge" alt="Publisher" />
@@ -21,23 +21,27 @@
 
 ---
 
-## 📥 Downloads (Latest Release v1.2.0)
+## 📥 Downloads (Latest Release v1.2.1)
 
 | Package | Description | Direct Download |
 | :--- | :--- | :--- |
-| **🚀 NexPad Windows Installer** | **Recommended.** 1-Click setup with ViGEmBus drivers, server, APK & uninstaller embedded. | [**Download `NexPad_Setup.exe`**](https://github.com/SushantSaks/NexPad/releases/latest/download/NexPad_Setup.exe) *(16.9 MB)* |
-| **📱 NexPad Android App** | Dedicated Android APK with Gyro Aiming, Haptic Rumble, 100 Hz UDP, themes & multiplayer HUD. | [**Download `NexPad.apk`**](https://github.com/SushantSaks/NexPad/releases/latest/download/NexPad.apk) *(7.19 MB)* |
+| **🚀 NexPad Windows Installer** | **Recommended.** 1-Click setup with ViGEmBus drivers, server, APK & uninstaller embedded. | [**Download `NexPad_Setup.exe`**](https://github.com/SushantSaks/NexPad/releases/latest/download/NexPad_Setup.exe) *(16.8 MB)* |
+| **📱 NexPad Android App** | Dedicated Android APK with zero-spin gyro aim, GitHub in-app updates & haptic rumble. | [**Download `NexPad.apk`**](https://github.com/SushantSaks/NexPad/releases/latest/download/NexPad.apk) *(7.04 MB)* |
 | **📦 NexPad Portable** | Standalone zip containing Windows server and Android APK without installer. | [**Download `NexPad_Portable.zip`**](https://github.com/SushantSaks/NexPad/releases/latest/download/NexPad_Portable.zip) *(14.0 MB)* |
 
 ---
 
-## ✨ What's New in v1.2.0
+## ✨ What's New in v1.2.1
 
-* 🎯 **Gyro Aiming & Motion Steering**: Surgical motion controls using your phone's gyroscope. Toggle ON/OFF, choose between *Always Active* or *Hold LT / ADS Aiming*, adjust sensitivity (0.1x – 3.0x), set anti-drift deadzones, and calibrate with 1 tap.
-* 📳 **Live In-Game Force Feedback (Haptic Rumble)**: Real-time ViGEmBus vibration notification thread streaming dual-motor rumble effects to your phone's vibration motor over low-latency UDP.
-* ⚡ **Sub-1ms Wired USB Gaming Mode**: Direct USB tethering (RNDIS) support with automatic multi-candidate subnet probing and two-way handshake verification for ultra-competitive esports latency.
-* 📶 **Low-Latency Wi-Fi Optimization & Socket QoS**: Native `WIFI_MODE_FULL_LOW_LATENCY` lock, `IPTOS_LOWDELAY = 0x10` headers, and hybrid nanosecond audio-grade pacing thread.
-* 🛡️ **Windows Hotspot Keep-Alive**: Prevents Windows Mobile Hotspot from automatically timing out offline.
+* 🎯 **Fixed Gyro Aiming & Motion Steering (Zero Lingering Spin)**:
+  * Rebuilt the gyro input pipeline so rotational velocity is calculated as instantaneous offsets rather than persistent stick accumulation—the camera stops immediately when phone motion ceases.
+  * **Continuous Auto-Drift Nulling**: Stillness zeroing automatically adapts to hardware MEMS bias, eliminating creeping rotation.
+  * **Dual-Zone Velocity Curves**: Anti-deadzone jump (~18%) for micro-aiming headshots + quadratic flick acceleration for swift 90°/180° camera turns.
+  * **Touch-Clutched Ratcheting Mode**: Added *"Touch Right Stick (Ratcheting Aim - Lift to Reset)"* to easily recenter your hands without moving the camera.
+* 🚀 **In-App Direct GitHub Update System**:
+  * The Android app automatically checks GitHub Releases on startup in the background.
+  * Adds an update notification badge (`✨ vX.X.X`) to the top HUD capsule and a **"Check for Updates"** button in Settings.
+  * Themed in-app dialog displays release highlights with a 1-tap **"Download APK"** button.
 
 ---
 
